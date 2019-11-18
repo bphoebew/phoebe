@@ -872,17 +872,25 @@ a:visited{
     border-color: transparent;
   }
   .aboutP, .curositiesP, .projectsP{
-    width: 160px;
-    height: 120px;
+    width: 240px;
+    height: 200px;
+    margin-top: 40px;
   }
   .homeIphone{
     display: inline;
     position: absolute;
     bottom: 10px;
-    left: 43%;
+  }
+  .flexHome{
+    display: flex;
+    justify-content: center;
   }
   .home{
     width: 90px;
     height: 87px;
+  }
+  .allPhone{
+    display: flex;
+    justify-content: space-around;
   }
 }
