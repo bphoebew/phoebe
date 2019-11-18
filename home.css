@@ -62,8 +62,6 @@ body.preloader-site {
 #popupNotes {
   -ms-overflow-style: none;
 }
-
-
 /* get rid of scroll bar end */
 .me{
   width: 50px;
@@ -864,11 +862,7 @@ a:visited{
 .aboutIphone, .projectsIphone, .curositiesIphone,.homeIphone{
   display: none;
 }
-@media only screen
-  and (min-width: 1024px)
-  and (max-height: 1366px)
-  and (orientation: portrait)
-  and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 414px) and (orientation: portrait) {
   .aboutAll, .projectsAll, .curositiesAll, .notesAll, .paintTotal, .table, #allMail{
     display: none;
   }
