@@ -33,7 +33,8 @@ body.preloader-site {
 }*
 
 body {
-  overflow: hidden;
+  overflow-y: hidden;
+overflow-x: hidden;
 }
 
 .me{
