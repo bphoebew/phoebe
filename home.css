@@ -31,14 +31,40 @@ body.preloader-site {
   padding:0px;
   box-sizing: border-box;
 }*
-
+/* get rid of scroll bar start */
 #popupThree::-webkit-scrollbar {
   display: none;
 }
 #popupThree {
   -ms-overflow-style: none;
 }
+#popupTwo::-webkit-scrollbar {
+  display: none;
+}
+#popupTwo {
+  -ms-overflow-style: none;
+}
+#popup::-webkit-scrollbar {
+  display: none;
+}
+#popup {
+  -ms-overflow-style: none;
+}
+#popupPaint::-webkit-scrollbar {
+  display: none;
+}
+#popupPaint {
+  -ms-overflow-style: none;
+}
+#popupNotes::-webkit-scrollbar {
+  display: none;
+}
+#popupNotes {
+  -ms-overflow-style: none;
+}
 
+
+/* get rid of scroll bar end */
 .me{
   width: 50px;
   height: 45px;
