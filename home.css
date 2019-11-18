@@ -290,7 +290,7 @@ body{
   top: 60px;
   left: 70px;
 }
-.pseudo:hover, .justCode:hover, .redesign:hover{
+.pseudo:hover, .justCode:hover, .redesign:hover, .lucy:hover{
 transform: scale(1.2);
 }
 .pseudoText{
@@ -332,8 +332,6 @@ transform: scale(1.2);
   left: 380px;
 }
 .redesignText{
-  width: 70px;
-  height: 70px;
   text-align: center;
   font-size: 12px;
   margin-top: 8px;
@@ -342,7 +340,25 @@ transform: scale(1.2);
   left: 370px;
   font-family: 'Lexend Exa', sans-serif;
 }
-.redesignPage, .justCodePage, .pseudoPage{
+.lucy{
+  width: 55px;
+  height: 70px;
+  margin-bottom: 5px;
+  /* object-fit: cover; */
+  position: absolute;
+  top: 57%;
+  left: 70px;
+}
+.lucyText{
+  text-align: center;
+  font-size: 12px;
+  margin-top: 8px;
+  position: absolute;
+  top: 77%;
+  left: 54px;
+  font-family: 'Lexend Exa', sans-serif;
+}
+.redesignPage, .justCodePage, .pseudoPage, .lucyPage{
   visibility: hidden;
 }
 .projectTitle{
@@ -369,15 +385,37 @@ transform: scale(1.2);
     right: 60px;
     font-size: 20px;
 }
-.proTextSub{
+.proTextSub, .proTextSubTwo, .proTextSubThree{
   font-family: 'Lexend Exa', sans-serif;
-  position: absolute;
-  top: 48%;
-  right: 30px;
   font-size: 12px;
   width: 240px;
   text-align: center;
   margin-bottom: 20px;
+}
+.proTextSub{
+  position: absolute;
+  top: 48%;
+  right: 30px;
+}
+.proTextTwo{
+  font-family: 'Lexend Exa', sans-serif;
+  position: absolute;
+  top: 105%;
+  left: 20px;
+  font-size: 20px;
+}
+.proTextSubTwo{
+  position: absolute;
+  top: 112%;
+  left: 7px;
+}
+.proTextThree{
+  font-family: 'Lexend Exa', sans-serif;
+  position: absolute;
+  top: 105%;
+  right: 60px;
+  font-size: 20px;
+  text-align: center;
 }
 .justCodeBut{
   position: absolute;
@@ -872,7 +910,7 @@ a:visited{
     border-color: transparent;
   }
   .aboutP, .curositiesP, .projectsP{
-    width: 240px;
+    width: 250px;
     height: 200px;
     margin-top: 40px;
   }
