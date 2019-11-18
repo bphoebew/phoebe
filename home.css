@@ -32,6 +32,10 @@ body.preloader-site {
   box-sizing: border-box;
 }*
 
+body {
+  overflow: hidden;
+}
+
 .me{
   width: 50px;
   height: 45px;
@@ -200,7 +204,7 @@ body{
   align-items: center;
   width: 400px;
 }
-.flexTabAgain{
+.flexTableAgain{
   display: flex;
   justify-content: center;
   margin-left: -150px;
@@ -787,10 +791,10 @@ a:visited{
   font-size: 0;
   line-height: 0;
 }
-#allGame:before {
+#allMail:before {
   position: absolute;
   bottom: 110%;
-  left: 110%;
+  left: 105%;
   margin-bottom: 5px;
   margin-left: -80px;
   padding: 7px;
@@ -806,10 +810,10 @@ a:visited{
   font-size: 14px;
   line-height: 1.2;
 }
-#allGame:after{
+#allMail:after{
   position: absolute;
   bottom: 110%;
-  left: 110%;
+  left: 105%;
   margin-left: -5px;
   width: 0;
   border-top: 5px solid white;
