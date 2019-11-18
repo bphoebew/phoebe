@@ -32,9 +32,11 @@ body.preloader-site {
   box-sizing: border-box;
 }*
 
-body {
-  overflow-y: hidden;
-overflow-x: hidden;
+#popupThree::-webkit-scrollbar {
+  display: none;
+}
+#popupThree {
+  -ms-overflow-style: none;
 }
 
 .me{
