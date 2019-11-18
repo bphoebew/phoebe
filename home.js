@@ -730,6 +730,7 @@ function showProjectPseudo(){
 function showProjectJustCode(){
   menuProject.css('visibility', 'hidden');
   justCodePage.css('visibility', 'visible');
+
 }
 function backMenu(){
   menuProject.css('visibility', 'visible');

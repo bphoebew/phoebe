@@ -181,9 +181,17 @@ body{
   width: 50%;
   height: 50px;
   position: absolute;
-  left: 23%;
+  /* left: 23%; */
   bottom: 3%;
   cursor: default;
+}
+.row{
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-around;
+   align-content: flex-end;
+   align-items: flex-end;
+   background-color: red;
 }
 .mail, #allMail{
   width: 100px;
@@ -302,7 +310,7 @@ transform: scale(1.2);
 .projectTitleF{
   position: absolute;
   top: 35px;
-  left: 200px;
+  left: 205px;
 }
 .projectPara{
   position: absolute;
