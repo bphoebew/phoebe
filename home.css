@@ -193,11 +193,23 @@ body{
    align-items: flex-end;
    background-color: red;
 }
+.rowTwo{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  width: 400px;
+}
+.flexTabAgain{
+  display: flex;
+  justify-content: center;
+  margin-left: -150px;
+}
 .mail, #allMail{
   width: 100px;
   height: 60px;
   position: absolute;
-  left: 28%;
+  /* left: 28%; */
   bottom: 5%;
   background-color: Transparent;
   border-color: transparent;
@@ -208,7 +220,7 @@ body{
   width: 70px;
   height: 90px;
   position: absolute;
-  left: 40%;
+  /* left: 40%; */
   bottom: 5%;
   background-color: Transparent;
   border-color: transparent;
@@ -219,7 +231,7 @@ body{
   width: 70px;
   height: 80px;
   position: absolute;
-  left: 50%;
+  /* left: 50%; */
   bottom: 5%;
   background-color: Transparent;
   border-color: transparent;
