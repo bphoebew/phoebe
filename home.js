@@ -20,6 +20,7 @@ var pink = $('.pink');
 var pinkH = $('.pinkH');
 var customPic = $('.customPic');
 var yellowH = $('.yellowH');
+var yellow = $('.yellow');
 var body = $('body');
 var heading = $('.heading');
 var currentColorBody = localStorage.getItem('bodyColor') || "#29C7D7";
@@ -39,8 +40,9 @@ purple.on("click", purpleBack);
 purpleH.on("click", purpleHead);
 pink.on("click", pinkBack);
 pinkH.on("click", pinkHead);
-customPic.on("click", picBack);
-yellowH.on("click", yellowHead)
+// customPic.on("click", picBack);
+yellowH.on("click", yellowHead);
+yellow.on("click", yellowBack);
 // phoebeImage.on("mouseover", changeImage);
 // phoebeImage.on("mouseout", changeImageTwo);
 
@@ -107,9 +109,15 @@ function yellowHead(){
   heading.css('backgroundColor', "#ffc87e");
   localStorage.setItem("headColor", headColor);
 }
-function picBack(){
-  body.css('background-image', "url('dittowall.jpg')");
+function yellowBack(){
+  var bodyColor = "#ffc87e";
+  body.css('backgroundColor', "#ffc87e");
+  localStorage.setItem("backgroundColor", storedBody);
+  body.css('backgroundColor', storedBody);
 }
+// function picBack(){
+//   body.css('background-image', "url('dittowall.jpg')");
+// }
 function refresh(){
     var storedBody = localStorage.getItem("bodyColor");
     var storedHead = localStorage.getItem("headColor");
@@ -311,10 +319,10 @@ function refresh(){
     // smoke
     spreadSmoke(true);
     // reset div position
-    popupThree.style.top = "20%";
+    popupThree.style.top = "13%";
     popupThree.style.left = "27%";
     popupThree.style.width = "600px";
-    popupThree.style.height = "370px";
+    popupThree.style.height = "470px";
     // popup.style.width = window.innerWidth - SCROLL_WIDTH + "px";
     // popup.style.height = window.innerHeight - SCROLL_WIDTH + "px";
     popupThree.style.display = "block";
@@ -706,21 +714,18 @@ function showNoteTwo(){
 var redesign = $('.redesign');
 var pseudo = $('.pseudo');
 var justCode = $('.justCode');
-var lucy = $('.lucy');
 var shetem = $('.shetem');
 var menuProject= $('.menuProject');
 var backProject = $('.backProject');
 var pseudoPage = $('.pseudoPage');
 var justCodePage = $('.justCodePage');
 var redesignPage = $('.redesignPage');
-var lucyPage = $('.lucyPage');
 var shetemPage = $('.shetemPage');
 
 redesign.on("click", showProjectRedesign);
 pseudo.on("click", showProjectPseudo);
 justCode.on("click", showProjectJustCode);
 backProject.on("click", backMenu);
-lucy.on("click", showProjectLucy);
 shetem.on("click", showProjectShetem);
 
 function showProjectRedesign(){
@@ -738,10 +743,6 @@ function showProjectJustCode(){
   justCodePage.css('visibility', 'visible');
 
 }
-function showProjectLucy(){
-  menuProject.css('visibility', 'hidden');
-  lucyPage.css('visibility', 'visible');
-}
 
 function showProjectShetem(){
   menuProject.css('visibility', 'hidden');
@@ -753,7 +754,6 @@ function backMenu(){
   redesignPage.css('visibility', 'hidden');
   pseudoPage.css('visibility', 'hidden');
   justCodePage.css('visibility', 'hidden');
-  lucyPage.css('visibility', 'hidden');
   shetemPage.css('visibility', 'hidden');
 }
 
@@ -847,5 +847,47 @@ function hideYeaText(){
     marathon.css('visibility', 'visible');
     track.css('visibility', 'visible');
     yeaText.css('visibility', 'hidden');
+  }
+}
+
+var yayoi = $('#yayoi');
+var webDesign = $('#webDesign');
+var dreamscape = $('#dreamscape');
+var curioAnswer = $('.curioAnswer');
+var leftArrowC = $('.leftArrowC');
+var rightArrowC = $('.rightArrowC');
+var curosPageOne = $('.curosPageOne');
+var curosPageTwo = $('.curosPageTwo');
+trackerC = 0;
+
+yayoi.on("click", showYayoi);
+webDesign.on("click", showWebDesign);
+dreamscape.on("click", showDreamscape);
+leftArrowC.on("click", goBackC);
+rightArrowC.on("click", goFrontC);
+
+function showYayoi(){
+  curioAnswer.text("i love yayoi kusama because of her");
+}
+function showWebDesign(){
+  curioAnswer.text("");
+}
+function showDreamscape(){
+  curioAnswer.text("");
+}
+
+function goFrontC(){
+  if (trackerC == 0){
+    curosPageOne.css('visibility', 'hidden');
+    curosPageTwo.css('visibility', 'visible');
+    trackerC++;
+  }
+}
+
+function goBackC(){
+  if (trackerC == 1){
+    curosPageTwo.css('visibility', 'hidden');
+    curosPageOne.css('visibility', 'visible');
+    trackerC--;
   }
 }
