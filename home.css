@@ -143,9 +143,8 @@ body{
   padding: 0;
 }
 .leftArrow, .rightArrow{
-  width: 50px;
-  height: 40px;
-  object-fit: cover;
+  width: 80px;
+  height: 50px;
 }
 .arrows{
   display: flex;
@@ -285,13 +284,13 @@ body{
 }
 /* PROJECT FOLDER BEGIN */
 .pseudo{
-  width: 60px;
+  width: 65px;
   height: 60px;
   margin-bottom: 5px;
   object-fit: cover;
   position: absolute;
-  top: 60px;
-  left: 70px;
+  top: 70px;
+  left: 65px;
 }
 .pseudo:hover, .justCode:hover, .redesign:hover, .lucy:hover, .shetem:hover{
 transform: scale(1.2);
@@ -469,12 +468,19 @@ transform: scale(1.2);
   width: 220px;
   height: 200px;
 }
+.logoLucy{
+  width: 160px;
+  height: 200px;
+  position: absolute;
+  top:40%;
+  left: 20px;
+}
 .backProject{
-  width: 30px;
+  width: 43px;
   height: 30px;
   position: absolute;
   top: 35px;
-  left: 10px;
+  left: -3px;
 }
 .exampleText{
   font-family: 'Lexend Exa', sans-serif;
