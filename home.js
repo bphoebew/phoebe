@@ -706,16 +706,22 @@ function showNoteTwo(){
 var redesign = $('.redesign');
 var pseudo = $('.pseudo');
 var justCode = $('.justCode');
+var lucy = $('.lucy');
+var shetem = $('.shetem');
 var menuProject= $('.menuProject');
 var backProject = $('.backProject');
 var pseudoPage = $('.pseudoPage');
 var justCodePage = $('.justCodePage');
 var redesignPage = $('.redesignPage');
+var lucyPage = $('.lucyPage');
+var shetemPage = $('.shetemPage');
 
 redesign.on("click", showProjectRedesign);
 pseudo.on("click", showProjectPseudo);
 justCode.on("click", showProjectJustCode);
 backProject.on("click", backMenu);
+lucy.on("click", showProjectLucy);
+shetem.on("click", showProjectShetem);
 
 function showProjectRedesign(){
   menuProject.css('visibility', 'hidden');
@@ -732,11 +738,23 @@ function showProjectJustCode(){
   justCodePage.css('visibility', 'visible');
 
 }
+function showProjectLucy(){
+  menuProject.css('visibility', 'hidden');
+  lucyPage.css('visibility', 'visible');
+}
+
+function showProjectShetem(){
+  menuProject.css('visibility', 'hidden');
+  shetemPage.css('visibility', 'visible');
+}
+
 function backMenu(){
   menuProject.css('visibility', 'visible');
   redesignPage.css('visibility', 'hidden');
   pseudoPage.css('visibility', 'hidden');
   justCodePage.css('visibility', 'hidden');
+  lucyPage.css('visibility', 'hidden');
+  shetemPage.css('visibility', 'hidden');
 }
 
 var leftArrow = $('.leftArrow');

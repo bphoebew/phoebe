@@ -176,7 +176,10 @@ body{
 #maraText{
   visibility: hidden;
   position: absolute;
-  top: 10%;
+  top: -3%;
+  left: 30%;
+  width: 300px;
+  font-size: 20px;
 }
 #trackText{
   visibility: hidden;
@@ -290,7 +293,7 @@ body{
   top: 60px;
   left: 70px;
 }
-.pseudo:hover, .justCode:hover, .redesign:hover, .lucy:hover{
+.pseudo:hover, .justCode:hover, .redesign:hover, .lucy:hover, .shetem:hover{
 transform: scale(1.2);
 }
 .pseudoText{
@@ -358,7 +361,25 @@ transform: scale(1.2);
   left: 54px;
   font-family: 'Lexend Exa', sans-serif;
 }
-.redesignPage, .justCodePage, .pseudoPage, .lucyPage{
+.shetem{
+  width: 55px;
+  height: 55px;
+  margin-bottom: 5px;
+  /* object-fit: cover; */
+  position: absolute;
+  top: 57%;
+  left: 220px;
+}
+.shetemText{
+  text-align: center;
+  font-size: 12px;
+  margin-top: 8px;
+  position: absolute;
+  top: 77%;
+  left: 220px;
+  font-family: 'Lexend Exa', sans-serif;
+}
+.redesignPage, .justCodePage, .pseudoPage, .lucyPage, .shetemPage{
   visibility: hidden;
 }
 .projectTitle{
@@ -370,6 +391,11 @@ transform: scale(1.2);
   position: absolute;
   top: 35px;
   left: 205px;
+}
+.projectTitleS{
+  position: absolute;
+  top: 35px;
+  left: 192px;
 }
 .projectPara{
   position: absolute;
@@ -409,6 +435,11 @@ transform: scale(1.2);
   top: 112%;
   left: 7px;
 }
+.proTextSubThree{
+  position: absolute;
+  top: 112%;
+  right: 20px;
+}
 .proTextThree{
   font-family: 'Lexend Exa', sans-serif;
   position: absolute;
@@ -419,8 +450,8 @@ transform: scale(1.2);
 }
 .justCodeBut{
   position: absolute;
-  top: 100%;
-  left: 40%;
+  top: 132%;
+  left: 15%;
   width: 90px;
   height: 40px;
   text-align: center;
@@ -438,15 +469,20 @@ transform: scale(1.2);
   width: 220px;
   height: 200px;
 }
-/* .proTextTwo{
-
-} */
 .backProject{
   width: 30px;
   height: 30px;
   position: absolute;
   top: 35px;
   left: 10px;
+}
+.exampleText{
+  font-family: 'Lexend Exa', sans-serif;
+  position: absolute;
+  top: 105%;
+  left: 30px;
+  font-size: 20px;
+  text-align: center;
 }
 /* PROJECT FOLDER END */
 /* Curosities Page START*/
@@ -900,7 +936,7 @@ a:visited{
 .aboutIphone, .projectsIphone, .curositiesIphone,.homeIphone{
   display: none;
 }
-@media only screen and (min-width: 414px) and (orientation: portrait) {
+@media only screen and (min-width: 414px) and (orientation:portrait){
   .aboutAll, .projectsAll, .curositiesAll, .notesAll, .paintTotal, .table, #allMail{
     display: none;
   }
