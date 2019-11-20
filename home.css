@@ -293,8 +293,16 @@ body{
   top: 70px;
   left: 65px;
 }
+
 .pseudo:hover, .justCode:hover, .redesign:hover, .shetem:hover, .lucy:hover, .SDG:hover, .techMag:hover{
 transform: scale(1.2);
+}
+
+.justCodeBut:hover, .redesignBut:hover{
+    /* background-color: #ffc87e; */
+      border: 2px solid #ffc87e;
+      color: #ffc87e;
+      cursor:pointer;
 }
 .pseudoText{
   font-size: 12px;
@@ -342,6 +350,20 @@ transform: scale(1.2);
   top: 130px;
   left: 370px;
   font-family: 'Lexend Exa', sans-serif;
+}
+.redesignBut{
+  position: absolute;
+  top: 120%;
+  left: 43%;
+  width: 90px;
+  height: 40px;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 50%;
+  font-family: 'Poppins', sans-serif;
+  border: 2px solid black;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .shetem{
   width: 55px;
@@ -396,6 +418,11 @@ transform: scale(1.2);
   position: absolute;
   top: 35px;
   left: 192px;
+}
+.projectTitleT{
+  position: absolute;
+  top: 35px;
+  left: 138px;
 }
 .projectPara{
   position: absolute;
@@ -533,6 +560,26 @@ transform: scale(1.2);
   flex-direction: row;
   margin-left: 46px;
   margin-top: 20px;
+}
+.curoSecArticle{
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  position: absolute;
+  top: -10px;
+  left: 150px;
+  width: 200px;
+}
+.curoFirstArt{
+  font-size: 20px;
+  font-family: 'Lexend Exa', sans-serif;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  width: 350px;
+}
+.curoFirstArt:hover{
+  color: #ffc87e;
+  cursor:pointer;
 }
 .curioText{
   font-size: 15px;

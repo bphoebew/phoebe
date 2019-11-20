@@ -715,18 +715,21 @@ var redesign = $('.redesign');
 var pseudo = $('.pseudo');
 var justCode = $('.justCode');
 var shetem = $('.shetem');
+var techMag = $('.techMag');
 var menuProject= $('.menuProject');
 var backProject = $('.backProject');
 var pseudoPage = $('.pseudoPage');
 var justCodePage = $('.justCodePage');
 var redesignPage = $('.redesignPage');
 var shetemPage = $('.shetemPage');
+var techMagPage = $('.techMagPage');
 
 redesign.on("click", showProjectRedesign);
 pseudo.on("click", showProjectPseudo);
 justCode.on("click", showProjectJustCode);
 backProject.on("click", backMenu);
 shetem.on("click", showProjectShetem);
+techMag.on("click", showProjectTech);
 
 function showProjectRedesign(){
   menuProject.css('visibility', 'hidden');
@@ -749,12 +752,17 @@ function showProjectShetem(){
   shetemPage.css('visibility', 'visible');
 }
 
+function showProjectTech(){
+  menuProject.css('visibility', 'hidden');
+  techMagPage.css('visibility', 'visible');
+}
 function backMenu(){
   menuProject.css('visibility', 'visible');
   redesignPage.css('visibility', 'hidden');
   pseudoPage.css('visibility', 'hidden');
   justCodePage.css('visibility', 'hidden');
   shetemPage.css('visibility', 'hidden');
+  techMagPage.css('visibility', 'hidden');
 }
 
 var leftArrow = $('.leftArrow');
