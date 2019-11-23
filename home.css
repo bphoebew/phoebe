@@ -580,6 +580,7 @@ transform: scale(1.2);
 .curoFirstArt:hover{
   color: #ffc87e;
   cursor:pointer;
+  transform: scale(1.2);
 }
 .curioText{
   font-size: 15px;
