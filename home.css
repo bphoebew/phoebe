@@ -300,6 +300,20 @@ body{
   width: 200px;
   height: 200px;
 }
+.pseudoBut{
+  position: absolute;
+  top: 132%;
+  left: 40%;
+  width: 90px;
+  height: 40px;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 50%;
+  font-family: 'Poppins', sans-serif;
+  border: 2px solid black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 .pseudo:hover, .justCode:hover, .redesign:hover, .shetem:hover, .lucy:hover, .SDG:hover, .techMag:hover{
 transform: scale(1.2);
 }
@@ -485,6 +499,14 @@ transform: scale(1.2);
   position: absolute;
   top: 105%;
   right: 60px;
+  font-size: 20px;
+  text-align: center;
+}
+.proTextThreeP{
+  font-family: 'Lexend Exa', sans-serif;
+  position: absolute;
+  top: 105%;
+  right: 30px;
   font-size: 20px;
   text-align: center;
 }
