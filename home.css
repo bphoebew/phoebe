@@ -286,14 +286,20 @@ body{
 /* PROJECT FOLDER BEGIN */
 .pseudo{
   width: 65px;
-  height: 60px;
+  height: 65px;
   margin-bottom: 5px;
-  object-fit: cover;
+  /* object-fit: cover; */
   position: absolute;
   top: 70px;
   left: 65px;
 }
-
+.logoPseudo{
+  position: absolute;
+  top: 43%;
+  left: 20px;
+  width: 200px;
+  height: 200px;
+}
 .pseudo:hover, .justCode:hover, .redesign:hover, .shetem:hover, .lucy:hover, .SDG:hover, .techMag:hover{
 transform: scale(1.2);
 }
@@ -385,7 +391,7 @@ transform: scale(1.2);
 }
 .techMag{
   width: 55px;
-  height: 55px;
+  height: 75px;
   margin-bottom: 5px;
   /* object-fit: cover; */
   position: absolute;
@@ -400,6 +406,13 @@ transform: scale(1.2);
   top: 77%;
   left: 50px;
   font-family: 'Lexend Exa', sans-serif;
+}
+.logoTech{
+  position: absolute;
+  top: 43%;
+  left: 20px;
+  width: 200px;
+  height: 240px;
 }
 .redesignPage, .justCodePage, .pseudoPage, .shetemPage, .techMagPage{
   visibility: hidden;
