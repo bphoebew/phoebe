@@ -328,7 +328,7 @@ body{
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.pseudo:hover, .justCode:hover, .redesign:hover, .shetem:hover, .lucy:hover, .SDG:hover, .techMag:hover{
+.pseudo:hover, .justCode:hover, .redesign:hover, .shetem:hover, .lucy:hover, .SDG:hover, .techMag:hover, .azn:hover{
 transform: scale(1.2);
 }
 
@@ -470,7 +470,24 @@ transform: scale(1.2);
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.redesignPage, .justCodePage, .pseudoPage, .shetemPage, .techMagPage{
+.azn{
+  width: 65px;
+  height: 65px;
+  margin-bottom: 5px;
+  position: absolute;
+  top: 60%;
+  right: 70px;
+}
+.aznText{
+  text-align: center;
+  font-size: 12px;
+  margin-top: 8px;
+  position: absolute;
+  top: 77%;
+  left: 370px;
+  font-family: 'Lexend Exa', sans-serif;
+}
+.redesignPage, .justCodePage, .pseudoPage, .shetemPage, .techMagPage, .aznPage{
   visibility: hidden;
 }
 .projectTitle{
@@ -639,22 +656,44 @@ transform: scale(1.2);
   margin-top: 20px;
 }
 .curoSecArticle{
-  font-size: 20px;
+  font-size: 26px;
+  text-align: center;
   font-family: 'Poppins', sans-serif;
   position: absolute;
   top: -10px;
-  left: 150px;
+  left: 250px;
   width: 200px;
 }
 .curoFirstArt{
   font-size: 20px;
   font-family: 'Lexend Exa', sans-serif;
   position: absolute;
-  top: 30px;
-  left: 50%;
+  top: 95px;
+  left: 240px;
   width: 350px;
+  -webkit-transform: rotate(5deg);
+ -moz-transform: rotate(5deg);
+ -ms-transform: rotate(5deg);
+ -o-transform: rotate(5deg);
 }
 .curoFirstArt:hover{
+  color: #ffc87e;
+  cursor:pointer;
+  transform: scale(1.2);
+}
+.curoSecArt{
+  font-size: 20px;
+  font-family: 'Lexend Exa', sans-serif;
+  position: absolute;
+  top: 145px;
+  left: 240px;
+  width: 350px;
+  -webkit-transform: rotate(-5deg);
+ -moz-transform: rotate(-5deg);
+ -ms-transform: rotate(-5deg);
+ -o-transform: rotate(-5deg);
+}
+.curoSecArt:hover{
   color: #ffc87e;
   cursor:pointer;
   transform: scale(1.2);
@@ -669,16 +708,23 @@ transform: scale(1.2);
   font-size: 20px;
   text-align: center;
   position: absolute;
-  top: 57%;
-  left: 46%;
+  top: 110%;
+  left: 43%;
 }
 .curioAnswer{
   font-size: 16px;
   font-family: 'Lexend Exa', sans-serif;
   text-align: center;
   position: absolute;
-  top: 64%;
-  left: 25%;
+  top: 130%;
+  left: 20%;
+}
+.curioImg{
+  width: 200px;
+  height: 260px;
+  position: absolute;
+  top: 3%;
+  left: 0%;
 }
 .lineFlexC{
   position: absolute;
