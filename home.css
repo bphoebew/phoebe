@@ -818,13 +818,13 @@ transform: scale(1.2);
   font-family: 'Poppins', sans-serif;
   margin: 5px;
 }
-.buttonNote, .buttonNoteTwo, .buttonNoteThree, .buttonNoteFour{
+.buttonNote, .buttonNoteTwo, .buttonNoteThree, .buttonNoteFour, .buttonNoteFive, .buttonNoteSix{
   border-color: Transparent;
   background-color: transparent;
   width: 200px;
   height: 70px;
 }
-.buttonNote:hover, .buttonNoteTwo:hover, .buttonNoteThree:hover, .buttonNoteFour:hover{
+.buttonNote:hover, .buttonNoteTwo:hover, .buttonNoteThree:hover, .buttonNoteFour:hover, .buttonNoteFive:hover, .buttonNoteSix:hover{
   background-color: #ffc87e;
   border-right: 2px solid black;
 }
@@ -915,6 +915,7 @@ display:none;
   z-index: 9;
   text-align: center;
   font-size: 20px;
+  visibility: visible;
 }
 p{
   margin: 0px;

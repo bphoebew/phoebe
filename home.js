@@ -139,7 +139,7 @@ function refresh(){
   var popup_bar = document.getElementById("popup_bar");
   var btn_close = document.getElementById("btn_close");
   var smoke = document.getElementById("smoke");
-
+  var directionArr = $('.directionArr');
   //-- let the popup make draggable & movable.
   var offset = { x: 0, y: 0 };
 
@@ -183,6 +183,7 @@ function refresh(){
     // popup.style.width = window.innerWidth - SCROLL_WIDTH + "px";
     // popup.style.height = window.innerHeight - SCROLL_WIDTH + "px";
     popup.style.display = "block";
+    directionArr.css('visibility', 'hidden');
   }
 
   btn_close.onclick = function(e){
@@ -210,6 +211,7 @@ function refresh(){
   var popup_barTwo = document.getElementById("popup_barTwo");
   var btn_closeTwo = document.getElementById("btn_closeTwo");
   var smokeTwo = document.getElementById("smokeTwo");
+    var directionArr = $('.directionArr');
 
   //-- let the popup make draggable & movable.
   var offset = { x: 0, y: 0 };
@@ -254,6 +256,7 @@ function refresh(){
     // popup.style.width = window.innerWidth - SCROLL_WIDTH + "px";
     // popup.style.height = window.innerHeight - SCROLL_WIDTH + "px";
     popupTwo.style.display = "block";
+        directionArr.css('visibility', 'hidden');
   }
 
   btn_closeTwo.onclick = function(e){
@@ -282,6 +285,7 @@ function refresh(){
   var popup_bar = document.getElementById("popup_barThree");
   var btn_closeThree = document.getElementById("btn_closeThree");
   var smokeThree = document.getElementById("smokeThree");
+      var directionArr = $('.directionArr');
 
   //-- let the popup make draggable & movable.
   var offset = { x: 0, y: 0 };
@@ -326,6 +330,7 @@ function refresh(){
     // popup.style.width = window.innerWidth - SCROLL_WIDTH + "px";
     // popup.style.height = window.innerHeight - SCROLL_WIDTH + "px";
     popupThree.style.display = "block";
+    directionArr.css('visibility', 'hidden');
   }
 
   btn_closeThree.onclick = function(e){
@@ -666,6 +671,7 @@ function checkTime(i) {
 
 var noteOne = $('.buttonNote');
 var noteTwo = $('.buttonNoteTwo');
+var noteFive = $('.buttonNoteFive');
 var titleNote = $('.titleNote');
 var noteSubText = $('.noteSubText');
 var noteSubTitle = $('.noteSubTitle');
@@ -679,15 +685,19 @@ var flexGIF = $('.flexGIF');
 
 noteOne.on("click", showNoteOne);
 noteTwo.on("click", showNoteTwo);
+noteFive.on("click", showNoteFive);
 
 function showNoteOne(){
   titleNote.text("October 7, 2019 at 4:30PM");
   noteSubTitle.text("What's this for?");
-  subNoteOne.text("formatted just like notes on an apple device, my notes are suppose to express what i have learned on a certain day or random thoughts or quotes that i like.");
+  subNoteOne.empty();
+  subNoteOne.append(`<p class = "noteSubText">formatted just like notes on an apple device, my notes are suppose to express what i have learned on a certain day or random thoughts or quotes that i like.</p>`);
   noteOne.css('backgroundColor', "#ffc87e");
   noteOne.css('border-right', '2px solid black');
   noteTwo.css('backgroundColor', "transparent");
   noteOne.css('border-right', '2px solid black');
+  noteFive.css('backgroundColor', "transparent");
+  noteFive.css('border-right', '2px solid black');
   cuteGIF.width(150);
   cuteGIF.height(150);
   cuteGIF.css('border', '5px solid black');
@@ -699,6 +709,8 @@ function showNoteTwo(){
   noteTwo.css('border-right', '2px solid black');
   noteOne.css('backgroundColor', "transparent");
   noteOne.css('border-right', '2px solid black');
+  noteFive.css('backgroundColor', "transparent");
+  noteFive.css('border-right', '2px solid black');
   subNoteTwo.text("");
   cuteGIF.width(0);
   cuteGIF.height(0);
@@ -708,7 +720,29 @@ function showNoteTwo(){
   tableOne.text("");
   titleNote.text("October 19, 2019 at 9:50PM");
   noteSubTitle.text("Cas Holman");
-  subNoteOne.text("Tired of watching rom-coms on Netflix, I decided to turn my attention towards a documentary series: abstract. I clicked on the episode labeled Cas Holman interested from the synopsis that said crafts tools and objects designed to inspire kids (and adults) to play creatively. Play creatively what did that mean? Building with lego instructions? Scheming with Monopoly? Playing with Barbie Dolls? After watching the 45 min video, I realized I was wrong. Cas Holman is a totally different game creator. She doesn't want kids following instructions. They need to be creative with their thoughts. However, with the amount of worksheets, templates and same books shoved into students faces every year, we have no choice but to color inside the lines.");
+  subNoteOne.empty();
+  subNoteOne.append(`<p style = "text-indent: 30px; text-align: left" class = "noteSubText">Tired of watching rom-coms on Netflix, I decided to turn my attention towards a documentary series: Abstract. I clicked on the episode labeled Cas Holman interested from the synopsis that said crafts tools and objects designed to inspire kids (and adults) to play creatively. Play creatively what did that mean? Building with Lego instructions? Scheming with Monopoly? Playing with Barbie Dolls? After watching the 45 min episode, I realized I was wrong. Cas Holman is a totally different game creator. She doesn't want kids following instructions. They need to be creative with their thoughts. However, with the amount of worksheets, templates and same books shoved into students faces every year, we have no choice but to color inside the lines.</p>`);
+}
+
+function showNoteFive(){
+  noteFive.css('backgroundColor', "#ffc87e");
+  noteFive.css('border-right', '2px solid black');
+  noteOne.css('backgroundColor', "transparent");
+  noteOne.css('border-right', '2px solid black');
+  noteTwo.css('backgroundColor', "transparent");
+  noteTwo.css('border-right', '2px solid black');
+  subNoteTwo.text("");
+  cuteGIF.width(0);
+  cuteGIF.height(0);
+  cuteGIF.css('border', '1px solid white');
+  cuteGIF.attr("src", "https://wallpaperplay.com/walls/full/2/d/e/102437.jpg");
+  titleNote.text("November 15, 2019 at 10:04PM");
+  noteSubTitle.text("A Change");
+  subNoteOne.empty();
+  subNoteOne.append(`<p style = "text-indent: 30px; text-align: left" class = "noteSubText">Today, my community made international news. At one point in time, we were named "one of the safest places to raise a child in America". We're a quiet California suburb.</p>`);
+  subNoteOne.append(`<p style = "text-indent: 30px; text-align: left" class = "noteSubText">I woke up yesterday morning hoping that school would be canceled from yet another fire that encircles are city. I got out of bed, brushed my teeth, followed through with my regular morning routine. I was on my way to my carpool's car when I got the message: "There's an active shooter on the Saugus camps and schools are having a lockdown".</p>`);
+  subNoteOne.append(`<p style = "text-indent: 30px; text-align: left" class = "noteSubText">For a moment, I just stood there and stared. It didn't seem real. Then, texts came flooding in, and I realized just how serious the situation was. "If you haven't gone to school yet I would stay home", the emergency text read. We turned the car around. I went home. Rumors spread like wildfires that often plague us. However, I felt helpless. Above all, I was heartbroken.</p>`);
+  subNoteOne.append(`<p style = "text-indent: 30px; text-align: left" class = "noteSubText"> I want to do something about this situation. I will do something about this situation. </p>`);
 }
 
 var redesign = $('.redesign');
