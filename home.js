@@ -919,7 +919,7 @@ leftArrowC.on("click", goBackC);
 rightArrowC.on("click", goFrontC);
 
 function showYayoi(){
-  curioAnswer.text("i love yayoi kusama because of her");
+  curioAnswer.text("yayoi kusama surrounds herself around the idea of polka dots and infinity. her infinity room at the broad inspired me and makes me think of alternate realities and possibilities");
 }
 function showWebDesign(){
   curioAnswer.text("");
