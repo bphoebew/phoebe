@@ -175,16 +175,34 @@ body{
 #maraText{
   visibility: hidden;
   position: absolute;
-  top: -3%;
+  top: 30%;
   left: 30%;
   width: 300px;
   font-size: 20px;
+  font-family: 'Lexend Exa', sans-serif;
+}
+#maraTextTitle{
+  visibility: hidden;
+  position: absolute;
+  top: 0%;
+  left: 43%;
+  width: 300px;
+  font-size: 25px;
+  font-family: 'Lexend Exa', sans-serif;
+}
+#trackTextTitle{
+  visibility: hidden;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  font-size: 25px;
   font-family: 'Lexend Exa', sans-serif;
 }
 #trackText{
   visibility: hidden;
   position: absolute;
   top: 5%;
+  right: 5%;
 }
 #yeaText{
   visibility: hidden;
@@ -331,7 +349,7 @@ body{
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.pseudo:hover, .justCode:hover, .redesign:hover, .shetem:hover, .lucy:hover, .SDG:hover, .techMag:hover, .azn:hover{
+.pseudo:hover, .justCode:hover, .redesign:hover, .shetem:hover, .lucy:hover, .SDG:hover, .techMag:hover, .azn:hover, .jumShrimp:hover{
 transform: scale(1.2);
 }
 
@@ -452,8 +470,8 @@ transform: scale(1.2);
   background-color: transparent;
 
 }
-.techMag{
-  width: 55px;
+.jumShrimp{
+  width: 60px;
   height: 75px;
   margin-bottom: 5px;
   /* object-fit: cover; */
@@ -461,7 +479,15 @@ transform: scale(1.2);
   top: 57%;
   left: 70px;
 }
-.techMagText{
+
+.logoShrimp{
+  position: absolute;
+  top: 33%;
+  left: 15px;
+  width: 220px;
+  height: 250px;
+}
+.shrimpText{
   text-align: center;
   font-size: 12px;
   margin-top: 8px;
@@ -470,6 +496,7 @@ transform: scale(1.2);
   left: 50px;
   font-family: 'Lexend Exa', sans-serif;
 }
+
 .logoTech{
   position: absolute;
   top: 43%;
@@ -526,7 +553,42 @@ transform: scale(1.2);
   left: 370px;
   font-family: 'Lexend Exa', sans-serif;
 }
-.redesignPage, .justCodePage, .pseudoPage, .shetemPage, .techMagPage, .aznPage{
+.techButAZN{
+  position: absolute;
+  top: 135%;
+  right: 20%;
+  width: 90px;
+  height: 40px;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 50%;
+  font-family: 'Poppins', sans-serif;
+  border: 2px solid black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: transparent;
+}
+
+.techMag{
+  width: 55px;
+  height: 75px;
+  margin-bottom: 5px;
+  /* object-fit: cover; */
+  position: absolute;
+  top: 100%;
+  left: 70px;
+}
+
+.techMagText{
+  text-align: center;
+  font-size: 12px;
+  margin-top: 8px;
+  position: absolute;
+  top: 120%;
+  left: 50px;
+  font-family: 'Lexend Exa', sans-serif;
+}
+.redesignPage, .justCodePage, .pseudoPage, .shetemPage, .techMagPage, .aznPage, .jumboPage{
   visibility: hidden;
 }
 .projectTitle{
@@ -553,6 +615,11 @@ transform: scale(1.2);
   position: absolute;
   top: 35px;
   left: 170px;
+}
+.projectTitleJ{
+  position: absolute;
+  top: 35px;
+  left: 150px;
 }
 .projectPara{
   position: absolute;
@@ -724,13 +791,13 @@ transform: scale(1.2);
   position: absolute;
   top: 95px;
   left: 240px;
-  width: 350px;
+  width: 300px;
   -webkit-transform: rotate(5deg);
  -moz-transform: rotate(5deg);
  -ms-transform: rotate(5deg);
  -o-transform: rotate(5deg);
 }
-.curoFirstArt:hover{
+.curoFirstArt:hover, .curoSecArt:hover,.curoThiArt:hover{
   color: #ffc87e;
   cursor:pointer;
   transform: scale(1.2);
@@ -741,16 +808,23 @@ transform: scale(1.2);
   position: absolute;
   top: 145px;
   left: 240px;
-  width: 350px;
+  width: 200px;
   -webkit-transform: rotate(-5deg);
  -moz-transform: rotate(-5deg);
  -ms-transform: rotate(-5deg);
  -o-transform: rotate(-5deg);
 }
-.curoSecArt:hover{
-  color: #ffc87e;
-  cursor:pointer;
-  transform: scale(1.2);
+.curoThiArt{
+  font-size: 20px;
+  font-family: 'Lexend Exa', sans-serif;
+  position: absolute;
+  top: 225px;
+  left: 260px;
+  width: 200px;
+  -webkit-transform: rotate(5deg);
+ -moz-transform: rotate(5deg);
+ -ms-transform: rotate(5deg);
+ -o-transform: rotate(5deg);
 }
 .curioText{
   font-size: 15px;
@@ -772,6 +846,15 @@ transform: scale(1.2);
   position: absolute;
   top: 130%;
   left: 20%;
+}
+.curioAnswerYay{
+  font-size: 16px;
+  font-family: 'Lexend Exa', sans-serif;
+  text-align: center;
+  position: absolute;
+  top: 130%;
+  left: -5%;
+  visibility: hidden;
 }
 .curioImg{
   width: 200px;

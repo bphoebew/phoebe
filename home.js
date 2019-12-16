@@ -751,6 +751,7 @@ var justCode = $('.justCode');
 var shetem = $('.shetem');
 var techMag = $('.techMag');
 var azn = $('.azn');
+var jumShrimp = $('.jumShrimp');
 var menuProject= $('.menuProject');
 var backProject = $('.backProject');
 var pseudoPage = $('.pseudoPage');
@@ -759,6 +760,7 @@ var redesignPage = $('.redesignPage');
 var shetemPage = $('.shetemPage');
 var techMagPage = $('.techMagPage');
 var aznPage = $('.aznPage');
+var jumboPage = $('.jumboPage');
 
 redesign.on("click", showProjectRedesign);
 pseudo.on("click", showProjectPseudo);
@@ -767,6 +769,8 @@ backProject.on("click", backMenu);
 shetem.on("click", showProjectShetem);
 techMag.on("click", showProjectTech);
 azn.on("click", showProjectAzn);
+jumShrimp.on("click", showProjectShrimp);
+
 
 function showProjectRedesign(){
   menuProject.css('visibility', 'hidden');
@@ -799,6 +803,10 @@ function showProjectAzn(){
   aznPage.css('visibility', 'visible');
 }
 
+function showProjectShrimp(){
+  menuProject.css('visibility', 'hidden');
+  jumboPage.css('visibility', 'visible');
+}
 function backMenu(){
   menuProject.css('visibility', 'visible');
   redesignPage.css('visibility', 'hidden');
@@ -807,6 +815,7 @@ function backMenu(){
   shetemPage.css('visibility', 'hidden');
   techMagPage.css('visibility', 'hidden');
   aznPage.css('visibility', 'hidden');
+  jumboPage.css('visibility', 'hidden');
 }
 
 var leftArrow = $('.leftArrow');
@@ -818,7 +827,9 @@ var marathon = $('#marathon');
 var track = $('#track');
 var yea = $('#yea');
 var maraText = $('#maraText');
+var maraTextTitle = $('#maraTextTitle');
 var trackText = $('#trackText');
+var trackTextTitle = $('#trackTextTitle');
 var yeaText = $('#yeaText');
 var aboutTracker = 0;
 
@@ -864,6 +875,7 @@ function showMaraText(){
     track.css('visibility', 'hidden');
     yea.css('visibility', 'hidden');
     maraText.css('visibility', 'visible');
+    maraTextTitle.css('visibility', 'visible');
   }
 }
 function hideMaraText(){
@@ -871,6 +883,7 @@ function hideMaraText(){
     track.css('visibility', 'visible');
     yea.css('visibility', 'visible');
     maraText.css('visibility', 'hidden');
+    maraTextTitle.css('visibility', 'hidden');
   }
 }
 function showTrackText(){
@@ -878,6 +891,7 @@ function showTrackText(){
     marathon.css('visibility', 'hidden');
     yea.css('visibility', 'hidden');
     trackText.css('visibility', 'visible');
+    trackTextTitle.css('visibility', 'visible');
   }
 }
 function hideTrackText(){
@@ -885,6 +899,7 @@ function hideTrackText(){
     marathon.css('visibility', 'visible');
     yea.css('visibility', 'visible');
     trackText.css('visibility', 'hidden');
+    trackTextTitle.css('visibility', 'hidden');
   }
 }
 function showYeaText(){
@@ -906,6 +921,7 @@ var yayoi = $('#yayoi');
 var webDesign = $('#webDesign');
 var dreamscape = $('#dreamscape');
 var curioAnswer = $('.curioAnswer');
+var curioAnswerYay = $('.curioAnswerYay');
 var leftArrowC = $('.leftArrowC');
 var rightArrowC = $('.rightArrowC');
 var curosPageOne = $('.curosPageOne');
@@ -919,7 +935,8 @@ leftArrowC.on("click", goBackC);
 rightArrowC.on("click", goFrontC);
 
 function showYayoi(){
-  curioAnswer.text("yayoi kusama surrounds herself around the idea of polka dots and infinity. her infinity room at the broad inspired me and makes me think of alternate realities and possibilities");
+  curioAnswer.css('visibility', 'hidden');
+  curioAnswerYay.css('visibility', 'visible');
 }
 function showWebDesign(){
   curioAnswer.text("");
@@ -932,6 +949,7 @@ function goFrontC(){
   if (trackerC == 0){
     curosPageOne.css('visibility', 'hidden');
     curosPageTwo.css('visibility', 'visible');
+      curioAnswerYay.css('visibility', 'hidden');
     trackerC++;
   }
 }
@@ -940,6 +958,7 @@ function goBackC(){
   if (trackerC == 1){
     curosPageTwo.css('visibility', 'hidden');
     curosPageOne.css('visibility', 'visible');
+    curioAnswer.css('visibility', 'visible');
     trackerC--;
   }
 }
