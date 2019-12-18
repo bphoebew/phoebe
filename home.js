@@ -212,6 +212,7 @@ function refresh(){
   var btn_closeTwo = document.getElementById("btn_closeTwo");
   var smokeTwo = document.getElementById("smokeTwo");
     var directionArr = $('.directionArr');
+    var scrollArr = $('.scrollArr');
 
   //-- let the popup make draggable & movable.
   var offset = { x: 0, y: 0 };
@@ -257,11 +258,13 @@ function refresh(){
     // popup.style.height = window.innerHeight - SCROLL_WIDTH + "px";
     popupTwo.style.display = "block";
         directionArr.css('visibility', 'hidden');
+        scrollArr.css('visibility', 'visible');
   }
 
   btn_closeTwo.onclick = function(e){
     popupTwo.style.display = "none";
     smokeTwo.style.display = "none";
+    scrollArr.css('visibility', 'hidden');
   }
 
   window.onresize = function(e){
@@ -745,6 +748,7 @@ function showNoteFive(){
   subNoteOne.append(`<p style = "text-indent: 30px; text-align: left" class = "noteSubText"> I want to do something about this situation. I will do something about this situation. </p>`);
 }
 
+var scrollArr = $('.scrollArr');
 var redesign = $('.redesign');
 var pseudo = $('.pseudo');
 var justCode = $('.justCode');
@@ -775,37 +779,43 @@ jumShrimp.on("click", showProjectShrimp);
 function showProjectRedesign(){
   menuProject.css('visibility', 'hidden');
   redesignPage.css('visibility', 'visible');
+  scrollArr.css('visibility', 'hidden');
 }
 
 function showProjectPseudo(){
   menuProject.css('visibility', 'hidden');
   pseudoPage.css('visibility', 'visible');
+  scrollArr.css('visibility', 'hidden');
 }
 
 function showProjectJustCode(){
   menuProject.css('visibility', 'hidden');
   justCodePage.css('visibility', 'visible');
-
+  scrollArr.css('visibility', 'hidden');
 }
 
 function showProjectShetem(){
   menuProject.css('visibility', 'hidden');
   shetemPage.css('visibility', 'visible');
+  scrollArr.css('visibility', 'hidden');
 }
 
 function showProjectTech(){
   menuProject.css('visibility', 'hidden');
   techMagPage.css('visibility', 'visible');
+  scrollArr.css('visibility', 'hidden');
 }
 
 function showProjectAzn(){
   menuProject.css('visibility', 'hidden');
   aznPage.css('visibility', 'visible');
+  scrollArr.css('visibility', 'hidden');
 }
 
 function showProjectShrimp(){
   menuProject.css('visibility', 'hidden');
   jumboPage.css('visibility', 'visible');
+  scrollArr.css('visibility', 'hidden');
 }
 function backMenu(){
   menuProject.css('visibility', 'visible');
@@ -816,6 +826,7 @@ function backMenu(){
   techMagPage.css('visibility', 'hidden');
   aznPage.css('visibility', 'hidden');
   jumboPage.css('visibility', 'hidden');
+  // scrollArr.css('visibility', 'visible');
 }
 
 var leftArrow = $('.leftArrow');
