@@ -797,7 +797,7 @@ transform: scale(1.2);
  -ms-transform: rotate(5deg);
  -o-transform: rotate(5deg);
 }
-.curoFirstArt:hover, .curoSecArt:hover,.curoThiArt:hover{
+.curoFirstArt:hover, .curoSecArt:hover,.curoThiArt:hover, .curoFourArt:hover{
   color: #ffc87e;
   cursor:pointer;
   transform: scale(1.2);
@@ -807,7 +807,8 @@ transform: scale(1.2);
   font-family: 'Lexend Exa', sans-serif;
   position: absolute;
   top: 145px;
-  left: 240px;
+  /* left: 240px; */
+  left: 290px;
   width: 200px;
   -webkit-transform: rotate(-5deg);
  -moz-transform: rotate(-5deg);
@@ -825,6 +826,18 @@ transform: scale(1.2);
  -moz-transform: rotate(5deg);
  -ms-transform: rotate(5deg);
  -o-transform: rotate(5deg);
+}
+.curoFourArt{
+  font-size: 20px;
+  font-family: 'Lexend Exa', sans-serif;
+  position: absolute;
+  top: 285px;
+  left: 260px;
+  width: 300px;
+  -webkit-transform: rotate(-5deg);
+ -moz-transform: rotate(-5deg);
+ -ms-transform: rotate(-5deg);
+ -o-transform: rotate(-5deg);
 }
 .curioText{
   font-size: 15px;

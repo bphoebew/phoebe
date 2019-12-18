@@ -949,8 +949,9 @@ function goFrontC(){
   if (trackerC == 0){
     curosPageOne.css('visibility', 'hidden');
     curosPageTwo.css('visibility', 'visible');
-      curioAnswerYay.css('visibility', 'hidden');
     trackerC++;
+    curioAnswerYay.css('visibility', 'hidden');
+    curioAnswer.css('visibility', 'hidden');
   }
 }
 
@@ -958,7 +959,7 @@ function goBackC(){
   if (trackerC == 1){
     curosPageTwo.css('visibility', 'hidden');
     curosPageOne.css('visibility', 'visible');
-    curioAnswer.css('visibility', 'visible');
     trackerC--;
+    curioAnswer.css('visibility', 'visible');
   }
 }
