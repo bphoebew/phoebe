@@ -176,17 +176,18 @@ body{
   visibility: hidden;
   position: absolute;
   top: 30%;
-  left: 30%;
-  width: 300px;
+  left: 35%;
+  width: 320px;
   font-size: 20px;
+  text-align: center;
   font-family: 'Lexend Exa', sans-serif;
 }
 #maraTextTitle{
   visibility: hidden;
   position: absolute;
   top: 0%;
-  left: 43%;
-  width: 300px;
+  left: 56%;
+  /* width: 300px; */
   font-size: 25px;
   font-family: 'Lexend Exa', sans-serif;
 }
@@ -201,8 +202,9 @@ body{
 #trackText{
   visibility: hidden;
   position: absolute;
-  top: 5%;
-  right: 5%;
+  top: 40%;
+  left: 3%;
+  text-align:center;
 }
 #yeaText{
   visibility: hidden;

@@ -839,6 +839,7 @@ var track = $('#track');
 var yea = $('#yea');
 var maraText = $('#maraText');
 var maraTextTitle = $('#maraTextTitle');
+// var maraName = $('#maraName');
 var trackText = $('#trackText');
 var trackTextTitle = $('#trackTextTitle');
 var yeaText = $('#yeaText');
@@ -887,6 +888,7 @@ function showMaraText(){
     yea.css('visibility', 'hidden');
     maraText.css('visibility', 'visible');
     maraTextTitle.css('visibility', 'visible');
+    // maraName.css('visibility', 'visible');
   }
 }
 function hideMaraText(){
@@ -895,6 +897,7 @@ function hideMaraText(){
     yea.css('visibility', 'visible');
     maraText.css('visibility', 'hidden');
     maraTextTitle.css('visibility', 'hidden');
+    // maraName.css('visibility', 'hidden');
   }
 }
 function showTrackText(){
