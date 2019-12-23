@@ -327,9 +327,9 @@ function refresh(){
     spreadSmoke(true);
     // reset div position
     popupThree.style.top = "13%";
-    popupThree.style.left = "27%";
-    popupThree.style.width = "600px";
-    popupThree.style.height = "470px";
+    popupThree.style.left = "28%";
+    popupThree.style.width = "550px";
+    popupThree.style.height = "400px";
     // popup.style.width = window.innerWidth - SCROLL_WIDTH + "px";
     // popup.style.height = window.innerHeight - SCROLL_WIDTH + "px";
     popupThree.style.display = "block";
@@ -834,14 +834,19 @@ var rightArrow = $('.rightArrow');
 var firstPage = $('.firstPage');
 var secPage = $('.secPage');
 var thirdPage = $('.thirdPage');
+var fourPage = $('.fourPage');
+var fivePage = $('.fivePage');
+var sixPage = $('.sixPage');
+var sevPage = $('.sevPage');
 var marathon = $('#marathon');
 var track = $('#track');
 var yea = $('#yea');
 var maraText = $('#maraText');
 var maraTextTitle = $('#maraTextTitle');
-// var maraName = $('#maraName');
+var maraPara = $('#maraPara');
 var trackText = $('#trackText');
 var trackTextTitle = $('#trackTextTitle');
+var trackPara = $('#trackPara');
 var yeaText = $('#yeaText');
 var aboutTracker = 0;
 
@@ -858,13 +863,45 @@ function goNext(){
   if (aboutTracker == 0){
     firstPage.css('visibility', 'hidden');
     secPage.css('visibility', 'visible');
-    track.css('visibility', 'visible');
-    yea.css('visibility', 'visible');
-    marathon.css('visibility', 'visible');
+    // track.css('visibility', 'visible');
+    // yea.css('visibility', 'visible');
+    // marathon.css('visibility', 'visible');
     aboutTracker++;
   }else if (aboutTracker == 1){
     secPage.css('visibility', 'hidden');
     thirdPage.css('visibility', 'visible');
+    track.css('visibility', 'hidden');
+    yea.css('visibility', 'hidden');
+    marathon.css('visibility', 'hidden');
+    aboutTracker++;
+  }
+  else if (aboutTracker == 2){
+    thirdPage.css('visibility', 'hidden');
+    fourPage.css('visibility', 'visible');
+    track.css('visibility', 'hidden');
+    yea.css('visibility', 'hidden');
+    marathon.css('visibility', 'hidden');
+    aboutTracker++;
+  }else if (aboutTracker == 3){
+    fourPage.css('visibility', 'hidden');
+    fivePage.css('visibility', 'visible');
+    track.css('visibility', 'hidden');
+    yea.css('visibility', 'hidden');
+    marathon.css('visibility', 'hidden');
+    aboutTracker++;
+  }else if (aboutTracker == 4){
+    fivePage.css('visibility', 'hidden');
+    sixPage.css('visibility', 'visible');
+    track.css('visibility', 'hidden');
+    yea.css('visibility', 'hidden');
+    marathon.css('visibility', 'hidden');
+    aboutTracker++;
+  }else if (aboutTracker == 5){
+    sixPage.css('visibility', 'hidden');
+    sevPage.css('visibility', 'visible');
+    track.css('visibility', 'visible');
+    yea.css('visibility', 'visible');
+    marathon.css('visibility', 'visible');
     aboutTracker++;
   }
 }
@@ -879,101 +916,143 @@ function goBack(){
   }else if (aboutTracker == 2){
     secPage.css('visibility', 'visible');
     thirdPage.css('visibility', 'hidden');
+    track.css('visibility', 'hidden');
+    yea.css('visibility', 'hidden');
+    marathon.css('visibility', 'hidden');
+    aboutTracker--;
+  }
+  else if (aboutTracker == 3){
+    thirdPage.css('visibility', 'visible');
+    fourPage.css('visibility', 'hidden');
+    track.css('visibility', 'hidden');
+    yea.css('visibility', 'hidden');
+    marathon.css('visibility', 'hidden');
+    aboutTracker--;
+  }
+  else if (aboutTracker == 4){
+    fourPage.css('visibility', 'visible');
+    fivePage.css('visibility', 'hidden');
+    track.css('visibility', 'hidden');
+    yea.css('visibility', 'hidden');
+    marathon.css('visibility', 'hidden');
+    aboutTracker--;
+  }
+  else if (aboutTracker == 5){
+    fivePage.css('visibility', 'visible');
+    sixPage.css('visibility', 'hidden');
+    track.css('visibility', 'hidden');
+    yea.css('visibility', 'hidden');
+    marathon.css('visibility', 'hidden');
+    aboutTracker--;
+  }
+  else if (aboutTracker == 6){
+    sixPage.css('visibility', 'visible');
+    sevPage.css('visibility', 'hidden');
+    track.css('visibility', 'hidden');
+    yea.css('visibility', 'hidden');
+    marathon.css('visibility', 'hidden');
     aboutTracker--;
   }
 }
 function showMaraText(){
-  if (aboutTracker == 1){
+  if (aboutTracker == 6){
     track.css('visibility', 'hidden');
     yea.css('visibility', 'hidden');
     maraText.css('visibility', 'visible');
     maraTextTitle.css('visibility', 'visible');
-    // maraName.css('visibility', 'visible');
+    maraPara.css('visibility', 'visible');
   }
 }
 function hideMaraText(){
-  if (aboutTracker == 1){
+  if (aboutTracker == 6){
     track.css('visibility', 'visible');
     yea.css('visibility', 'visible');
     maraText.css('visibility', 'hidden');
     maraTextTitle.css('visibility', 'hidden');
-    // maraName.css('visibility', 'hidden');
+    maraPara.css('visibility', 'hidden');
   }
 }
 function showTrackText(){
-  if (aboutTracker == 1){
+  if (aboutTracker == 6){
     marathon.css('visibility', 'hidden');
     yea.css('visibility', 'hidden');
     trackText.css('visibility', 'visible');
     trackTextTitle.css('visibility', 'visible');
+    trackPara.css('visibility', 'visible');
   }
 }
 function hideTrackText(){
-  if (aboutTracker == 1){
+  if (aboutTracker == 6){
     marathon.css('visibility', 'visible');
     yea.css('visibility', 'visible');
     trackText.css('visibility', 'hidden');
     trackTextTitle.css('visibility', 'hidden');
+    trackPara.css('visibility', 'hidden');
   }
 }
 function showYeaText(){
-  if (aboutTracker == 1){
+  if (aboutTracker == 6){
     marathon.css('visibility', 'hidden');
     track.css('visibility', 'hidden');
     yeaText.css('visibility', 'visible');
   }
 }
 function hideYeaText(){
-  if (aboutTracker == 1){
+  if (aboutTracker == 6){
     marathon.css('visibility', 'visible');
     track.css('visibility', 'visible');
     yeaText.css('visibility', 'hidden');
   }
 }
 
-var yayoi = $('#yayoi');
-var webDesign = $('#webDesign');
-var dreamscape = $('#dreamscape');
-var curioAnswer = $('.curioAnswer');
-var curioAnswerYay = $('.curioAnswerYay');
 var leftArrowC = $('.leftArrowC');
 var rightArrowC = $('.rightArrowC');
-var curosPageOne = $('.curosPageOne');
-var curosPageTwo = $('.curosPageTwo');
-trackerC = 0;
+var processOne = $('.processOne');
+var processTwo = $('.processTwo');
+var processThree = $('.processThree');
+var processFour = $('.processFour');
+var processFive = $('.processFive');
+var processTrack = 0;
 
-yayoi.on("click", showYayoi);
-webDesign.on("click", showWebDesign);
-dreamscape.on("click", showDreamscape);
-leftArrowC.on("click", goBackC);
-rightArrowC.on("click", goFrontC);
+leftArrowC.on("click", processBack);
+rightArrowC.on("click", processMove);
 
-function showYayoi(){
-  curioAnswer.css('visibility', 'hidden');
-  curioAnswerYay.css('visibility', 'visible');
-}
-function showWebDesign(){
-  curioAnswer.text("");
-}
-function showDreamscape(){
-  curioAnswer.text("");
-}
-
-function goFrontC(){
-  if (trackerC == 0){
-    curosPageOne.css('visibility', 'hidden');
-    curosPageTwo.css('visibility', 'visible');
-    trackerC++;
-    curioAnswerYay.css('visibility', 'hidden');
-    curioAnswer.css('visibility', 'hidden');
+function processMove(){
+  if (processTrack == 0){
+    processOne.css("visibility", "hidden");
+    processTwo.css("visibility", "visible");
+    processTrack++;
+  }else if (processTrack == 1){
+    processTwo.css("visibility", "hidden");
+    processThree.css("visibility", "visible");
+    processTrack++;
+  }else if (processTrack == 2){
+    processThree.css("visibility", "hidden");
+    processFour.css("visibility", "visible");
+    processTrack++;
+  }else if (processTrack == 3){
+    processFour.css("visibility", "hidden");
+    processFive.css("visibility", "visible");
+    processTrack++;
   }
 }
 
-function goBackC(){
-  if (trackerC == 1){
-    curosPageTwo.css('visibility', 'hidden');
-    curosPageOne.css('visibility', 'visible');
-    trackerC--;
-    curioAnswer.css('visibility', 'visible');
+function processBack(){
+  if (processTrack == 1){
+    processOne.css("visibility", "visible");
+    processTwo.css("visibility", "hidden");
+    processTrack--;
+  }else if (processTrack == 2){
+    processTwo.css("visibility", "visible");
+    processThree.css("visibility", "hidden");
+    processTrack--;
+  }else if (processTrack == 3){
+    processThree.css("visibility", "visible");
+    processFour.css("visibility", "hidden");
+    processTrack--;
+  }else if (processTrack == 4){
+    processFour.css("visibility", "visible");
+    processFive.css("visibility", "hidden");
+    processTrack--;
   }
 }

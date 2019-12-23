@@ -103,7 +103,7 @@ body.preloader-site {
 }
 .homeIphone{
   display: inline;
-  position: absolute;
+  position: fixed;
   bottom: 10px;
 }
 .home{

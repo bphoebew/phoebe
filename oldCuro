@@ -1,0 +1,25 @@
+<div class = "curosPageOne">
+  <div class = "yayoiDiv">
+    <input type="image" src="yayoi.jpg" name="button" id="yayoi" class = "picsPage"/>
+    <p class = "curioText"> yayoi <br>kusama </p>
+    <p class = "curioAnswerYay">yayoi kusama surrounds herself around the idea of polka dots and infinity. her infinity room at the broad inspired me and makes me think of alternate realities and possibilities</p>
+  </div>
+  <div class = "webDesignDiv">
+    <input type="image" src="https://tribulant.com/blog/wp-content/uploads/2019/01/webdesign.jpg" name="button" id="webDesign" class = "picsPage"/>
+    <p class = "curioText"> web <br> design </p>
+  </div>
+  <div class = "dreamscapeDiv">
+    <input type="image" src="http://www.sourcesoundvr.com/wp-content/uploads/2018/08/source-sound-vr-alienzoo.jpg" name="button" id="dreamscape" class = "picsPage"/>
+    <p class = "curioText"> dreamscape <br> immersive </p>
+  </div>
+  <p class = "curioWhy"> why? </p>
+  <p class = "curioAnswer"> click the images to see why i <br>have an interest for that thing <br>& then click the arrows to see <br>more curiosities</p>
+</div>
+<div class = "curosPageTwo">
+<img class = "curioImg" src = "curioRead.jpg">
+<p class = "curoSecArticle"> inspirational article finds </p>
+<a href = "https://www.npr.org/2019/07/18/743157480/toys-r-us-is-coming-back-but-with-a-different-approach" target = "_blank"><p class = "curoFirstArt"> The Toys R Us Rebrand </p></a>
+<a href = "https://www.nytimes.com/2019/11/07/opinion/nike-running-mary-cain.html?smid=nytcore-ios-share" target = "_blank"><p class = "curoSecArt"> Mary Cain </p></a>
+<a href = "https://www.ted.com/talks/pranav_mistry_the_thrilling_potential_of_sixthsense_technology?language=en" target = "_blank"><p class = "curoThiArt"> The Sixth Sense </p></a>
+<a href = "https://www.cnn.com/2019/12/12/business/worlds-first-3d-printed-neighborhood-trnd/index.html" target = "_blank"><p class = "curoFourArt"> 3D Printed Houses </p></a>
+</div>

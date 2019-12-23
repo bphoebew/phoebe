@@ -133,6 +133,7 @@ body{
   font-size: 15px;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
+
   margin-top: 10px;
   width: 300px;
 }
@@ -151,10 +152,49 @@ body{
   flex-direction: row;
   justify-content: space-around;
 }
+.aboutDir{
+  font-size: 30px;
+  position: absolute;
+  top: -20px;
+  left: 30%;
+  margin: 0px;
+}
+.navOne{
+  font-size:15px;
+  /* position: absolute;
+  top: 80%;
+  left: 20%; */
+  width: 200px;
+  text-align: center;
+  margin: 50px;
+    font-family: 'Lexend Exa', sans-serif;
+}
+.navTotal{
+  display: flex;
+  flex-direction: row;
+  margin-left: -50px;
+  margin-top: -25px;
+}
+.navPicTotal{
+  display: flex;
+  flex-direction: column;
+}
+.directPic{
+  width: 120px;
+  height: 100px;
+  margin-left: 80px;
+  margin-top: -40px;
+}
+.directPicT{
+  width: 80px;
+  height: 90px;
+  margin-left: 110px;
+  margin-top: -45px;
+}
 .firstPage{
   visibility: visible;
 }
-.secPage, .thirdPage{
+.secPage, .thirdPage, .fourPage, .fivePage, .sixPage, .sevPage{
   visibility: hidden;
   position: absolute;
   top: 10%;
@@ -172,13 +212,67 @@ body{
   border-radius: 50%;
   border: 5px solid #ffc87e;
 }
-#maraText{
+.thirdPic{
+  width: 210px;
+  height: 150px;
+  margin-top: 0px;
+}
+.thirdText{
+  font-size: 30px;
+  margin-left: 40px;
+  margin-top: -10px;
+}
+.thirdTextSub, .thirdTextSubPro{
+  font-size: 15px;
+  margin-left: 50px;
+  margin-top: 2px;
+  font-family: 'Lexend Exa', sans-serif;
+}
+.thirdTextSubPro:hover{
+  color: #ffc87e;
+  cursor:pointer;
+  transform: scale(1.2);
+}
+.flexCol{
+  display: flex;
+  flex-direction: column;
+}
+.flexColT{
+  display: flex;
+  flex-direction: column;
+  margin-left: -10px;
+}
+.fourPic{
+  margin-top: 20px;
+  width: 150px;
+  height: 130px;
+}
+.fivePic{
+  margin-top: -20px;
+  margin-left: 50px;
+  width: 150px;
+  height: 190px;
+}
+.fourAbText{
+  font-size: 30px;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 110px;
+}
+.sixAbText{
+  font-size: 20px;
+  text-align: center;
+position: absolute;
+top: 100%;
+margin-left: 50px;
+}
+#maraPara{
   visibility: hidden;
   position: absolute;
-  top: 30%;
+  top: 48%;
   left: 35%;
   width: 320px;
-  font-size: 20px;
+  font-size: 15px;
   text-align: center;
   font-family: 'Lexend Exa', sans-serif;
 }
@@ -190,6 +284,14 @@ body{
   /* width: 300px; */
   font-size: 25px;
   font-family: 'Lexend Exa', sans-serif;
+}
+#maraText{
+  visibility: hidden;
+  position: absolute;
+  top: 22%;
+  left: 35%;
+  width: 320px;
+  text-align: center;
 }
 #trackTextTitle{
   visibility: hidden;
@@ -206,6 +308,16 @@ body{
   left: 3%;
   text-align:center;
 }
+#trackPara{
+  visibility: hidden;
+  position: absolute;
+  top: 10%;
+  left: 63%;
+    font-family: 'Lexend Exa', sans-serif;
+  font-size: 15px;
+  width: 200px;
+  text-align:center;
+}
 #yeaText{
   visibility: hidden;
   position: absolute;
@@ -216,6 +328,7 @@ body{
   width: 18px;
   height: 18px;
   position: absolute;
+  margin-top: -10px;
   right: 130px;
   cursor:pointer;
 }
@@ -634,7 +747,7 @@ transform: scale(1.2);
     font-family: 'Lexend Exa', sans-serif;
     position: absolute;
     top: 40%;
-    right: 60px;
+    right: 53px;
     font-size: 20px;
 }
 .proTextSub, .proTextSubTwo, .proTextSubThree{
@@ -653,7 +766,7 @@ transform: scale(1.2);
   font-family: 'Lexend Exa', sans-serif;
   position: absolute;
   top: 105%;
-  left: 20px;
+  left: 45px;
   font-size: 20px;
 }
 .proTextSubTwo{
@@ -670,7 +783,7 @@ transform: scale(1.2);
   font-family: 'Lexend Exa', sans-serif;
   position: absolute;
   top: 105%;
-  right: 60px;
+  right: 75px;
   font-size: 20px;
   text-align: center;
 }
@@ -759,129 +872,66 @@ transform: scale(1.2);
 /* PROJECT FOLDER END */
 
 /* Curosities Page START*/
-.curosPageOne{
-  position: absolute;
-  top: 6%;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  margin-left: 46px;
+.titleProcess{
+  font-size: 30px;
+  margin-left: 30px;
   margin-top: 20px;
-}
-.curosPageTwo{
-  visibility: hidden;
-  position: absolute;
-  top: 6%;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  margin-left: 46px;
-  margin-top: 20px;
-}
-.curoSecArticle{
-  font-size: 26px;
   text-align: center;
   font-family: 'Poppins', sans-serif;
+  /* font-family: 'Lexend Exa', sans-serif; */
+}
+.processPic{
+  width: 150px;
+  height: 170px;
   position: absolute;
-  top: -10px;
-  left: 250px;
-  width: 200px;
+  top: 37%;
+  left: 35%;
 }
-.curoFirstArt{
-  font-size: 20px;
-  font-family: 'Lexend Exa', sans-serif;
-  position: absolute;
-  top: 95px;
-  left: 240px;
-  width: 300px;
-  -webkit-transform: rotate(5deg);
- -moz-transform: rotate(5deg);
- -ms-transform: rotate(5deg);
- -o-transform: rotate(5deg);
-}
-.curoFirstArt:hover, .curoSecArt:hover,.curoThiArt:hover, .curoFourArt:hover{
-  color: #ffc87e;
-  cursor:pointer;
-  transform: scale(1.2);
-}
-.curoSecArt{
-  font-size: 20px;
-  font-family: 'Lexend Exa', sans-serif;
-  position: absolute;
-  top: 145px;
-  /* left: 240px; */
-  left: 290px;
-  width: 200px;
-  -webkit-transform: rotate(-5deg);
- -moz-transform: rotate(-5deg);
- -ms-transform: rotate(-5deg);
- -o-transform: rotate(-5deg);
-}
-.curoThiArt{
-  font-size: 20px;
-  font-family: 'Lexend Exa', sans-serif;
-  position: absolute;
-  top: 225px;
-  left: 260px;
-  width: 200px;
-  -webkit-transform: rotate(5deg);
- -moz-transform: rotate(5deg);
- -ms-transform: rotate(5deg);
- -o-transform: rotate(5deg);
-}
-.curoFourArt{
-  font-size: 20px;
-  font-family: 'Lexend Exa', sans-serif;
-  position: absolute;
-  top: 285px;
-  left: 260px;
-  width: 300px;
-  -webkit-transform: rotate(-5deg);
- -moz-transform: rotate(-5deg);
- -ms-transform: rotate(-5deg);
- -o-transform: rotate(-5deg);
-}
-.curioText{
-  font-size: 15px;
-  text-align: center;
-  margin-left: -30px;
-  font-family: 'Lexend Exa', sans-serif;
-}
-.curioWhy{
-  font-size: 20px;
-  text-align: center;
-  position: absolute;
-  top: 110%;
-  left: 43%;
-}
-.curioAnswer{
-  font-size: 16px;
-  font-family: 'Lexend Exa', sans-serif;
-  text-align: center;
-  position: absolute;
-  top: 130%;
-  left: 20%;
-}
-.curioAnswerYay{
-  font-size: 16px;
-  font-family: 'Lexend Exa', sans-serif;
-  text-align: center;
-  position: absolute;
-  top: 130%;
-  left: -5%;
+.processTwo, .processThree, .processFour, .processFive{
   visibility: hidden;
 }
-.curioImg{
-  width: 200px;
-  height: 260px;
+.processTextTwo{
   position: absolute;
-  top: 3%;
-  left: 0%;
+  top: 10%;
+  left: 5%;
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+.subProcess{
+  font-family: 'Lexend Exa', sans-serif;
+  font-size: 15px;
+  padding-right: 18px;
+  text-align: center;
+  position: absolute;
+    top: 25%;
+  left: 10%;
+}
+.linksProcess{
+  position: absolute;
+    top: 50%;
+  left: 20%;
+}
+.processLink{
+  color: #874F52;
+  text-decoration: underline;
+}
+.processLink:visited{
+  color: #874F52;
+  text-decoration: underline;
+}
+.processLink:link{
+  color: #874F52;
+  text-decoration: underline;
+}
+.githubProcess, .wireframeProcess{
+  font-family: 'Lexend Exa', sans-serif;
+  margin-top: 20px;
+  font-size: 17px
 }
 .lineFlexC{
   position: absolute;
-  top: 78%;
-  left: 100px;
+  top: 74%;
+  left: 75px;
 }
 .leftArrowC{
   position: absolute;
@@ -1353,17 +1403,37 @@ a:visited{
   filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
-.aboutIphone, .projectsIphone, .curositiesIphone,.homeIphone{
+.aboutIphone, .projectsIphone, .curositiesIphone,.homeIphone, .noteIphone, .contactIphone{
   display: none;
 }
 @media only screen and (min-width: 414px) and (orientation:portrait){
   .aboutAll, .projectsAll, .curositiesAll, .notesAll, .paintTotal, .table, #allMail, .directionArr{
     display: none;
   }
-  .aboutIphone, .projectsIphone, .curositiesIphone{
+  .aboutIphone, .projectsIphone, .curositiesIphone, .contactIphone, .noteIphone{
     display: inline;
     background-color: Transparent;
     border-color: transparent;
+  }
+  .aboutIphone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .appTextAb{
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 55px;
+  }
+  .appTextPro{
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 45px;
+  }
+  .appTextNot{
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 65px;
   }
   .aboutP, .curositiesP, .projectsP{
     width: 250px;
