@@ -12,7 +12,8 @@ h1{
   font-size: 21.5px;
 }
 body{
-  background-color: #29C7D7;
+  background: white;
+  background-color: red;
 }
 .spaceRight{
   position: absolute;
@@ -236,7 +237,7 @@ a:visited{
   margin-left: -30px;
   margin-top: 10px;
   border-radius: 50%;
-  background-color: transparent;
+  background-color: white;
   border: 5px solid black;
   color: black;
   font-family: 'Poppins', sans-serif;
