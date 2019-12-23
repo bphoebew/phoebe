@@ -118,72 +118,42 @@ body.preloader-site {
 }
 .quest{
   font-size: 100px;
-  padding-top: 30px;
   text-align: left;
+    padding-top: 30px;
   margin-left: 50px;
-  font-family: 'Poppins', sans-serif;
-}
-.questTwo{
-  font-size: 100px;
-  padding-top: 30px;
-  text-align: right;
-  margin-right: 50px;
   font-family: 'Poppins', sans-serif;
 }
 .answer{
+  font-size: 70px;
+  margin-left: 80px;
+  text-align: left;
   font-family: 'Lexend Exa', sans-serif;
-  font-size: 33px;
-  text-align: center;
-  margin-left: 50px;
-  margin-right: 50px;
+}
+.phoebe{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-left: 100px;
+  border: 5px solid #ffc87e;
 }
 .processPic{
-  width: 500px;
+  width: 700px;
   height: 520px;
   margin-bottom: 0px;
 }
-.linksProcess{
-  margin-top: 40px;
-}
-.processLink{
-  color: #874F52;
-  text-decoration: underline;
-}
-.processLink:visited{
-  color: #874F52;
-  text-decoration: underline;
-}
-.processLink:link{
-  color: #874F52;
-  text-decoration: underline;
-}
-.githubProcess, .wireframeProcess{
-  font-family: 'Lexend Exa', sans-serif;
-  margin-top: 20px;
-  font-size: 30px;
-  text-align: center;
-}
-.picRow{
-  margin-top: 30px;
+.flexRow{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  margin-top: 50px;
 }
-.cartPic{
-  width: 150px;
-  height: 150px;
-  margin-left: -30px;
-}
-.codePic{
-  width: 240px;
-  height: 150px;
-    margin-left: -30px;
-}
-.threePic{
-  width: 150px;
-  height: 150px;
-}
-#one, #two, #three{
+#one{
   width: 100%;
+  height: 100vh;
+}
+
+#two{
+  width: 100%;
+  background-color: blue;
   height: 100vh;
 }
