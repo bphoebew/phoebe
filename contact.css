@@ -114,80 +114,32 @@ body.preloader-site {
   font-size: 130px;
   text-align: center;
   margin-top: 150px;
-  font-family: 'Poppins', sans-serif;
-}
-.quest{
-  font-size: 100px;
-  text-align: left;
-    padding-top: 30px;
   margin-left: 50px;
   font-family: 'Poppins', sans-serif;
 }
-.answer{
-  font-size: 70px;
-  margin-left: 80px;
-  text-align: left;
+.processPic{
+  width: 600px;
+  height: 380px;
+}
+.mail{
+  font-size: 100px;
+  text-align: center;
+  margin-top: 150px;
+  padding-top: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+.mailSub{
+  font-size: 60px;
+  text-align: center;
   font-family: 'Lexend Exa', sans-serif;
 }
-.phoebe{
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-left: 100px;
-  border: 5px solid #ffc87e;
-}
-.processPic{
-  width: 700px;
-  height: 520px;
-  margin-bottom: 0px;
-}
-.flexRow{
-  display: flex;
-  flex-direction: row;
-  margin-top: 50px;
-}
-.tableCon{
-  font-size: 60px;
-  font-family: 'Poppins', sans-serif;
-text-align: center;
-padding-top: 50px;
-margin-left: 80px;
-margin-right: 80px;
-}
-.flexCol{
-  display: flex;
-  flex-direction: column;
+.mailT{
+  font-size: 100px;
   text-align: center;
   margin-top: 50px;
-  margin-left: 80px;
-  margin-right: 80px;
-  font-family: 'Lexend Exa', sans-serif;
-}
-.tableSub{
-    font-size: 50px;
-    margin-bottom: 25px;
-    color: #FAFAF3;
-}
-a{
-  text-decoration: none;
-  color: #FAFAF3;
-}
-a:link{
-  text-decoration: none;
-  color: #FAFAF3;
-}
-a:visited{
-  text-decoration: none;
-  color: #FAFAF3;
+  font-family: 'Poppins', sans-serif;
 }
 #one, #two{
   width: 100%;
-  height: 100vh;
-}
-
-#three{
-  width: 100%;
-  background-color: blue;
   height: 100vh;
 }
