@@ -1,5 +1,3 @@
-
-
 var profile = $('.profile');
 var pass = $('.hide');
 var track = 0;
