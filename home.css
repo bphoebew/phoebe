@@ -313,15 +313,35 @@ margin-left: 50px;
   position: absolute;
   top: 10%;
   left: 63%;
-    font-family: 'Lexend Exa', sans-serif;
+  font-family: 'Lexend Exa', sans-serif;
   font-size: 15px;
   width: 200px;
   text-align:center;
 }
+#yeaTextTitle{
+  visibility: hidden;
+  position: absolute;
+  top: 0%;
+  left: 20%;
+  /* color: blue; */
+  font-size: 25px;
+  font-family: 'Lexend Exa', sans-serif;
+}
 #yeaText{
   visibility: hidden;
   position: absolute;
-  top: 5%;
+  top: 22%;
+  left: 5%;
+}
+#yeaPara{
+  visibility: hidden;
+  position: absolute;
+  top: 48%;
+  left: 0%;
+  width: 320px;
+  font-size: 15px;
+  text-align: center;
+  font-family: 'Lexend Exa', sans-serif;
 }
 /* ABOUT FOLDER END */
 .IG{

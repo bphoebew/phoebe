@@ -848,6 +848,8 @@ var trackText = $('#trackText');
 var trackTextTitle = $('#trackTextTitle');
 var trackPara = $('#trackPara');
 var yeaText = $('#yeaText');
+var yeaTextTitle = $('#yeaTextTitle');
+var yeaPara = $('#yeaPara');
 var aboutTracker = 0;
 
 leftArrow.on("click", goBack);
@@ -995,6 +997,8 @@ function showYeaText(){
     marathon.css('visibility', 'hidden');
     track.css('visibility', 'hidden');
     yeaText.css('visibility', 'visible');
+    yeaTextTitle.css('visibility', 'visible');
+    yeaPara.css('visibility', 'visible');
   }
 }
 function hideYeaText(){
@@ -1002,6 +1006,8 @@ function hideYeaText(){
     marathon.css('visibility', 'visible');
     track.css('visibility', 'visible');
     yeaText.css('visibility', 'hidden');
+    yeaTextTitle.css('visibility', 'hidden');
+    yeaPara.css('visibility', 'hidden');
   }
 }
 
