@@ -675,6 +675,7 @@ function checkTime(i) {
 var noteOne = $('.buttonNote');
 var noteTwo = $('.buttonNoteTwo');
 var noteFive = $('.buttonNoteFive');
+var noteSix = $('.buttonNoteSix');
 var titleNote = $('.titleNote');
 var noteSubText = $('.noteSubText');
 var noteSubTitle = $('.noteSubTitle');
@@ -689,6 +690,7 @@ var flexGIF = $('.flexGIF');
 noteOne.on("click", showNoteOne);
 noteTwo.on("click", showNoteTwo);
 noteFive.on("click", showNoteFive);
+noteSix.on("click", showNoteSix);
 
 function showNoteOne(){
   titleNote.text("October 7, 2019 at 4:30PM");
@@ -701,6 +703,8 @@ function showNoteOne(){
   noteOne.css('border-right', '2px solid black');
   noteFive.css('backgroundColor', "transparent");
   noteFive.css('border-right', '2px solid black');
+  noteSix.css('backgroundColor', "transparent");
+  noteSix.css('border-right', '2px solid black');
   cuteGIF.width(150);
   cuteGIF.height(150);
   cuteGIF.css('border', '5px solid black');
@@ -714,6 +718,8 @@ function showNoteTwo(){
   noteOne.css('border-right', '2px solid black');
   noteFive.css('backgroundColor', "transparent");
   noteFive.css('border-right', '2px solid black');
+  noteSix.css('backgroundColor', "transparent");
+  noteSix.css('border-right', '2px solid black');
   subNoteTwo.text("");
   cuteGIF.width(0);
   cuteGIF.height(0);
@@ -734,6 +740,8 @@ function showNoteFive(){
   noteOne.css('border-right', '2px solid black');
   noteTwo.css('backgroundColor', "transparent");
   noteTwo.css('border-right', '2px solid black');
+  noteSix.css('backgroundColor', "transparent");
+  noteSix.css('border-right', '2px solid black');
   subNoteTwo.text("");
   cuteGIF.width(0);
   cuteGIF.height(0);
@@ -741,6 +749,29 @@ function showNoteFive(){
   cuteGIF.attr("src", "https://wallpaperplay.com/walls/full/2/d/e/102437.jpg");
   titleNote.text("November 15, 2019 at 10:04PM");
   noteSubTitle.text("A Change");
+  subNoteOne.empty();
+  subNoteOne.append(`<p style = "text-indent: 30px; text-align: left" class = "noteSubText">Today, my community made international news. At one point in time, we were named "one of the safest places to raise a child in America". We're a quiet California suburb.</p>`);
+  subNoteOne.append(`<p style = "text-indent: 30px; text-align: left" class = "noteSubText">I woke up yesterday morning hoping that school would be canceled from yet another fire that encircles are city. I got out of bed, brushed my teeth, followed through with my regular morning routine. I was on my way to my carpool's car when I got the message: "There's an active shooter on the Saugus camps and schools are having a lockdown".</p>`);
+  subNoteOne.append(`<p style = "text-indent: 30px; text-align: left" class = "noteSubText">For a moment, I just stood there and stared. It didn't seem real. Then, texts came flooding in, and I realized just how serious the situation was. "If you haven't gone to school yet I would stay home", the emergency text read. We turned the car around. I went home. Rumors spread like wildfires that often plague us. However, I felt helpless. Above all, I was heartbroken.</p>`);
+  subNoteOne.append(`<p style = "text-indent: 30px; text-align: left" class = "noteSubText"> I want to do something about this situation. I will do something about this situation. </p>`);
+}
+
+function showNoteSix(){
+  noteSix.css('backgroundColor', "#ffc87e");
+  noteSix.css('border-right', '2px solid black');
+  noteOne.css('backgroundColor', "transparent");
+  noteOne.css('border-right', '2px solid black');
+  noteTwo.css('backgroundColor', "transparent");
+  noteTwo.css('border-right', '2px solid black');
+  noteFive.css('backgroundColor', "transparent");
+  noteFive.css('border-right', '2px solid black');
+  subNoteTwo.text("");
+  cuteGIF.width(0);
+  cuteGIF.height(0);
+  cuteGIF.css('border', '1px solid white');
+  cuteGIF.attr("src", "https://wallpaperplay.com/walls/full/2/d/e/102437.jpg");
+  titleNote.text("February 14, 2020 at 5:20PM");
+  noteSubTitle.text("The Problematic Ideals in Rom Coms");
   subNoteOne.empty();
   subNoteOne.append(`<p style = "text-indent: 30px; text-align: left" class = "noteSubText">Today, my community made international news. At one point in time, we were named "one of the safest places to raise a child in America". We're a quiet California suburb.</p>`);
   subNoteOne.append(`<p style = "text-indent: 30px; text-align: left" class = "noteSubText">I woke up yesterday morning hoping that school would be canceled from yet another fire that encircles are city. I got out of bed, brushed my teeth, followed through with my regular morning routine. I was on my way to my carpool's car when I got the message: "There's an active shooter on the Saugus camps and schools are having a lockdown".</p>`);
